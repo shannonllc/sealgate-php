@@ -1,0 +1,35 @@
+{
+  "name": "shannonllc/sealgate",
+  "description": "PHP SDK for SealGate: passkey registration and login, users and passkeys, recovery, audit log and stats, and webhook verification.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["sealgate", "passkey", "passkeys", "webauthn", "fido2", "standard-webhooks", "sdk"],
+  "homepage": "https://sealgate.jp/",
+  "authors": [{ "name": "SHANNON LIMITED LIABILITY COMPANY" }],
+  "support": {
+    "issues": "https://github.com/shannonllc/sealgate-php/issues",
+    "source": "https://github.com/shannonllc/sealgate-php",
+    "docs": "https://sealgate.jp/docs"
+  },
+  "require": {
+    "php": ">=8.1",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5 || ^11.0 || ^12.0"
+  },
+  "autoload": {
+    "psr-4": { "SealGate\\": "src/" },
+    "files": ["src/functions.php"]
+  },
+  "autoload-dev": {
+    "psr-4": { "SealGate\\Tests\\": "tests/" }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
